@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
               height: 200,
               width: 200,
               image: NetworkImage(
-                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
             )
           ],
         )),
