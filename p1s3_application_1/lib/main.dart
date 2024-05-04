@@ -6,8 +6,10 @@ class ColorChangeWidget extends StatefulWidget {
 }
 
 class _ColorChangeWidgetState extends State<ColorChangeWidget> {
+  //estado _currentColor representa el color actual del contenedor.
   Color _currentColor = Colors.blue;
-
+//Cuando el usuario toca el contenedor, se llama a la función _toggleColor(), 
+//que cambia _currentColor entre azul y rojo alternativamente
   void _toggleColor() {
     setState(() {
       _currentColor = _currentColor == Colors.blue ? Colors.red : Colors.blue;
@@ -16,6 +18,7 @@ class _ColorChangeWidgetState extends State<ColorChangeWidget> {
 
   @override
   Widget build(BuildContext context) {
+//GestureDetector para detectar el toque del usuario en el contenedor y llamar a la función _toggleColor()
     return GestureDetector(
       onTap: _toggleColor,
       child: Container(
@@ -36,6 +39,7 @@ class _ColorChangeWidgetState extends State<ColorChangeWidget> {
   }
 }
 
+//En el método main(), se muestra el ColorChangeWidget en la pantalla principal.
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
